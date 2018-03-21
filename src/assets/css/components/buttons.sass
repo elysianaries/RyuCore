@@ -1,0 +1,112 @@
+.wx-cell
+  text-align: right
+  color: #999999
+
+
+.weui-cell_access .wx-cell
+  padding-right: 13px
+  position: relative
+
+.weui-cell_access .wx-cell:after
+  content: " "
+  display: inline-block
+  height: 6px
+  width: 6px
+  border-width: 2px 2px 0 0
+  border-color: #C8C8CD
+  border-style: solid
+  -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0)
+          transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0)
+  position: relative
+  top: -2px
+  position: absolute
+  top: 50%
+  margin-top: -4px
+  right: 2px
+
+
+.weui-cells_radio .wx-cell
+  padding-left: 0.35em
+
+
+.weui-cells_form .wx-cell
+  font-size: 0
+
+
+
+.wx-switch-cp-box
+  position: relative
+  width: 52px
+  height: 32px
+  border: 1px solid #DFDFDF
+  outline: 0
+  border-radius: 16px
+  box-sizing: border-box
+  background-color: #fff
+  -webkit-transition: background-color 0.1s, border 0.1s
+  transition: background-color 0.1s, border 0.1s
+
+.weui-switch:before,
+.wx-switch-cp-box:before
+  content: " "
+  position: absolute
+  top: 0
+  left: 0
+  width: 50px
+  height: 30px
+  border-radius: 15px
+  background-color: #FDFDFD
+  -webkit-transition: -webkit-transform 0.35s cubic-bezier(0.45, 1, 0.4, 1)
+  transition: -webkit-transform 0.35s cubic-bezier(0.45, 1, 0.4, 1)
+  transition: transform 0.35s cubic-bezier(0.45, 1, 0.4, 1)
+  transition: transform 0.35s cubic-bezier(0.45, 1, 0.4, 1), -webkit-transform 0.35s cubic-bezier(0.45, 1, 0.4, 1)
+
+.weui-switch:after,
+.wx-switch-cp-box:after
+  content: " "
+  position: absolute
+  top: 0
+  left: 0
+  width: 30px
+  height: 30px
+  border-radius: 15px
+  background-color: #FFFFFF
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4)
+  -webkit-transition: -webkit-transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35)
+  transition: -webkit-transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35)
+  transition: transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35)
+  transition: transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35), -webkit-transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35)
+
+.weui-switch:checked,
+.wx-switch-cp-input:checked ~ .wx-switch-cp-box
+  border-color: #F2BF5E
+  background-color: #F2BF5E
+
+.weui-switch:checked:before,
+.wx-switch-cp-input:checked ~ .wx-switch-cp-box:before
+  -webkit-transform: scale(0)
+          transform: scale(0)
+
+.weui-switch:checked:after,
+.wx-switch-cp-input:checked ~ .wx-switch-cp-box:after
+  -webkit-transform: translateX(20px)
+          transform: translateX(20px)
+
+.wx-switch-cp-input
+  position: absolute
+  left: -9999px
+
+.wx-switch-cp-box
+  display: block
+
+.bottom-orange-btn
+  text-align: center
+  background-color: #f2bf5e
+  width: 90%
+  margin-left: 5%
+  border-radius: 3rem
+  font-size: 2rem
+  font-weight: 500
+  height: 5rem
+  line-height: 5rem
+  color: #fff

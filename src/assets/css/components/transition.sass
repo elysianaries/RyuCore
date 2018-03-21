@@ -1,0 +1,41 @@
+// name: fade
+// .fade-enter-active, .fade-leave-active
+//     transition: opacity 0.2s
+// .fade-enter, .fade-leave-to
+//     opacity: 0
+
+// name: slide-left
+.slide-left-enter-active, .slide-left-leave-active
+    transition: all 0.5s ease
+.slide-left-enter, .slide-left-leave-to
+    transform: translate(50%, 0)
+    // transform: translateZ(100px) rotate(50deg)
+    opacity: 0
+// name: slide-right
+.slide-right-enter-active, .slide-right-leave-active
+    transition: all 0.5s ease
+.slide-right-enter, .slide-right-leave-to
+    transform: translate(-50%, 0)
+    opacity: 0
+
+// name: slide-fade
+// .slide-fade-enter-active
+//     transition: all .3s ease
+//
+// .slide-fade-leave-active
+//     transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0)
+//
+// .slide-fade-enter, .slide-fade-leave-active
+//     transform: translateX(10px)
+//     opacity: 0
+
+// .outLeftInRight-transition,.fadeOutLeft-transition, .fadeInLeft-transition
+//     transition: transform .3s ease-in-out
+//
+// /* 进入时的状态，从右开始 */
+// .outLeftInRight-enter,.fadeInLeft-enter,.fadeInLeft-leave
+//     transform: translateX(100%)
+//
+// /* 离开时的状态，向左移动 */
+// .outLeftInRight-leave, .fadeOutLeft-enter, .fadeOutLeft-leave
+//     transform: translateX(-100%)
