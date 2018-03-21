@@ -18,7 +18,6 @@ Vue.mixin(mixins)
 // mixin下面的方法会有影响全局，注意！！！
 
 import filters from './filters'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import './assets/css/main.sass'
 
 window.$ = $
@@ -26,7 +25,6 @@ window.$ = $
 
 Vue.config.debug = true
 // 开启debug模式
-/* eslint-disable no-new */
 Vue.use(VueRouter)
 Vue.use(VueResource)
 Vue.use(Vuex)
@@ -37,6 +35,8 @@ Vue.prototype.vueScrollTo = (x, y, animate) => {
 Vue.prototype.echarts = Echarts
 
 Vue.config.productionTip = false
+
+Vue.config.devtools = false
 const app = new Vue({
     router,
     render: h => h(App)

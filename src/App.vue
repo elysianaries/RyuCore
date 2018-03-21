@@ -16,7 +16,7 @@ import { mapGetters, mapActions } from 'vuex'
 export default {
     name: 'App',
     components: {
-        alertBox
+
     },
     store,
     computed: {
