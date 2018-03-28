@@ -1,19 +1,22 @@
 <template lang="pug">
     .index-content
-        .index-head
-            p  head
-        .index-body
-            p  body
-
+        head-nav
+        .swiper-wrap
+            swiper-content
 </template>
 
 <script>
+
+import headNav from './layouts/headNav.vue'
+import swiperContent from './layouts/swiperContent.vue'
+
 import store from '../vuex/store'
 import { mapGetters, mapActions } from 'vuex'
 export default {
     name: 'index',
     components: {
-
+      headNav,
+      swiperContent
     },
     store,
     computed: {
@@ -51,15 +54,10 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-.web
-    position: absolute
-    background: rgba(0, 0, 0, 0.9)
-    padding: 0.2rem 0.5rem
-    color: #fff
-    top: 0
-    left: 0
-    z-index: 1000
-    a
-        color: #fff
-.index-tabbar
+.head-nav
+    width: 100%
+    height: 60px
+    background-color: green
+.swiper-wrap
+    margin-top: 60px
 </style>

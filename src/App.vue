@@ -1,13 +1,7 @@
 <template lang="pug">
     #app
-        //- alert-box(
-        //-     v-if = 'show_alert',
-        //-     :alert-mess = 'alert_mess',
-        //-     v-on:makeSure = 'makeSureAlert(to, next)')
-        //- transition(:name='transitionName')
         keep-alive
-            router-view.all-absolute(v-cloak, v-if='keep_alive')
-        router-view.all-absolute(v-cloak, v-if='!keep_alive')
+            router-view
 </template>
 
 <script>
@@ -29,7 +23,6 @@ export default {
 
         ]),
         makeSureAlert(to, next) {
-            this.show_alert = 0
             next({
                 path: '/login',
                 query: { redirect: to.fullPath }
@@ -62,9 +55,5 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-    .all-absolute
-        width: 100%
-        height: 100%
-        position: absolute
         // transition: all .5s ease
 </style>
